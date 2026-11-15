@@ -1,3 +1,13 @@
+# BEGIN Nugery HTTPS (hors bloc WordPress, limité au domaine de production)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(?:www\.)?nugery\.fr$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.nugery\.fr$ [NC]
+RewriteRule ^ https://www.nugery.fr%{REQUEST_URI} [R=301,L,NE]
+</IfModule>
+# END Nugery HTTPS
+
 
 # BEGIN WordPress
 # Les directives (lignes) entre « BEGIN WordPress » et « END WordPress » sont générées
