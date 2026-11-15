@@ -1,0 +1,17 @@
+.DS_Store
+.bash*
+.env
+.env.*
+!.env.example
+www/wp-config.php
+*.log
+*.sql
+*.sql.gz
+www/wp-content/cache/
+www/wp-content/upgrade/
+www/wp-content/upgrade-temp-backup/
+www/wp-content/uploads/wc-logs/
+www/wp-content/uploads/wpcf7_uploads/
+www/wp-content/uploads/woocommerce_uploads/
+www/wp-content/uploads/liquid_temp/
+www/wp-content/uploads/merlin-wp/
